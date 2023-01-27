@@ -1,0 +1,81 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-image: url('https://cdn.glitch.global/293970f8-b1a4-40cf-9286-6b448ac006ce/bg.jpg?v=1649832659500');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+  overflow: hidden;
+}
+
+.container {
+	padding: 20px;
+	height: 100vh;
+	min-height: 400px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.quote {
+	min-height: 230px;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.quoteText {
+	min-height: 100px;
+	line-height: 1.5;
+}
+
+.quoteAuthor {
+	text-align: end;
+}
+
+#showQuote {
+	margin-top: 70px;
+	padding: 15px 25px;
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+  cursor:pointer;
+}
+
+@media all and (max-width: 400px) {
+	.quote {
+		font-size: 18px;
+	}
+	.quoteText {
+		min-height: 120px;
+	}
+}
+
+@media all and (max-height: 400px) {
+	.quote {
+		min-height: 200px;
+	}
+	.container {
+		height: 100vh;
+		min-height: calc(100vh - calc(100vh - 100%));
+	}
+	#showQuote {
+		margin-top: 30px;
+	}
+}
